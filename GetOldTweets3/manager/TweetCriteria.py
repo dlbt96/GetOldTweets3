@@ -73,6 +73,7 @@ class TweetCriteria:
         querySearch : str
         """
         self.querySearch = querySearch
+        print(self.querySearch)
         return self
 
     def setMaxTweets(self, maxTweets):
