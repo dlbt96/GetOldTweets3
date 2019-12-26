@@ -338,9 +338,9 @@ class TweetManager:
             opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cookieJar))
         opener.addheaders = headers
 
-        if debug:
-            print(url)
-            print('\n'.join(h[0]+': '+h[1] for h in headers))
+        #if debug:
+        print(url)
+        print('\n'.join(h[0]+': '+h[1] for h in headers))
         while True:
             try:
                 response = opener.open(url)
